@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AudioVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suzume no tojimari" translatesAutoresizingMaskIntoConstraints="NO" id="QUc-e7-kQ7">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wK7-WD-rHI">
+                                <rect key="frame" x="134" y="83" width="73" height="21.333333333333329"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Suzume">
+                                        <attributes>
+                                            <font key="NSFont" size="19" name="Arial-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiA-T6-R3i">
+                                <rect key="frame" x="248" y="59" width="129" height="34.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="PCR-y9-rpM"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Stop ">
+                                    <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="stopVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F4q-Yi-HC0"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="161" translatesAutoresizingMaskIntoConstraints="NO" id="YcG-AT-IuU">
+                                <rect key="frame" x="134" y="252" width="109.33333333333331" height="425"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64Y-td-m0U">
+                                        <rect key="frame" x="0.0" y="0.0" width="109" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Start Audio">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gtq-YZ-1LQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sO8-3f-0hG">
+                                        <rect key="frame" x="22.666666666666657" y="195.33333333333331" width="64" height="34.333333333333343"/>
+                                        <color key="tintColor" systemColor="tableBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Stop ">
+                                            <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGC-I9-LPV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rp-Kj-pY6">
+                                        <rect key="frame" x="0.0" y="390.66666666666663" width="109.33333333333333" height="34.333333333333314"/>
+                                        <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Start Video">
+                                            <color key="baseBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="do4-cQ-6Vs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wK7-WD-rHI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="0FV-4w-G7E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YcG-AT-IuU" secondAttribute="bottom" constant="141" id="0y6-Qn-MC8"/>
+                            <constraint firstItem="eiA-T6-R3i" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6RQ-Lr-Edv"/>
+                            <constraint firstItem="QUc-e7-kQ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="71m-9P-KxV"/>
+                            <constraint firstItem="YcG-AT-IuU" firstAttribute="leading" secondItem="wK7-WD-rHI" secondAttribute="leading" id="81g-lj-fvp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YcG-AT-IuU" secondAttribute="trailing" constant="149.66999999999999" id="JK7-bf-jTV"/>
+                            <constraint firstItem="QUc-e7-kQ7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zr4-7K-gYh"/>
+                            <constraint firstItem="eiA-T6-R3i" firstAttribute="leading" secondItem="wK7-WD-rHI" secondAttribute="trailing" constant="41" id="pmN-6e-fMr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YcG-AT-IuU" secondAttribute="bottom" constant="141" id="rSN-bs-402"/>
+                            <constraint firstItem="YcG-AT-IuU" firstAttribute="top" secondItem="wK7-WD-rHI" secondAttribute="bottom" constant="147.66999999999999" id="sgh-sh-h4X"/>
+                            <constraint firstItem="QUc-e7-kQ7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uTK-VN-6iN"/>
+                            <constraint firstItem="wK7-WD-rHI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="v7c-2J-qsi"/>
+                            <constraint firstAttribute="bottom" secondItem="QUc-e7-kQ7" secondAttribute="bottom" id="v9Y-3Q-S7m"/>
+                            <constraint firstItem="eiA-T6-R3i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xh5-Jt-a0a"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.84732824427481" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="suzume no tojimari" width="540" height="960"/>
+        <systemColor name="tableBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
